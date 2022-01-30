@@ -1,0 +1,8 @@
+extends: spelling
+message: "'%s' is a typo!"
+# `dicpath` may be absolute or relative. Vale also
+# respects the `DICPATH` environment variable.
+dicpath: ../styles/dics
+dictionaries:
+  - en_US
+  - en_medical

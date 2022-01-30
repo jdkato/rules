@@ -1,3 +1,54 @@
 $ cdf ${ROOTDIR}/occurrence
 $ vale --output=line --sort --normalize --relative --no-exit test.md
 test.md:1:1:occurrence.RequiredHeading:Missing an 'Introduction' heading.
+
+$ cdf ${ROOTDIR}/sequence
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:3:4:sequence.WOULD_BE_JJ_VB:The infinitive 'write' after 'be' requries 'to'. Did you mean 'be great *to* write'?
+test.md:9:88:sequence.WOULD_BE_JJ_VB:The infinitive 'come' after 'be' requries 'to'. Did you mean 'be available *to* come'?
+test.md:11:32:sequence.OF_ALL_TIMES:In this context, the idiom needs to be spelled 'of all time'.
+test.md:13:5:sequence.OF_ALL_TIMES:In this context, the idiom needs to be spelled 'of all time'.
+test.md:15:24:sequence.OF_ALL_TIMES:In this context, the idiom needs to be spelled 'of all time'.
+test.md:17:42:sequence.OF_ALL_TIMES:In this context, the idiom needs to be spelled 'of all time'.
+test.md:21:5:sequence.APOS_ARE:Did you mean "endpoints" instead of "endpoint's"?
+
+$ cdf ${ROOTDIR}/script
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:17:1:script.NewSection:Consider inserting a new section heading at this point.
+test.md:27:1:script.NewSection:Consider inserting a new section heading at this point.
+
+$ cdf ${ROOTDIR}/metric
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:1:1:metric.GunningFog:Try to keep the Gunning-Fog index (11.06) below 10.
+
+$ cdf ${ROOTDIR}/capitalization
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:3:4:capitalization.AP:'What is AT&T's problem?' should be in title case
+
+$ cdf ${ROOTDIR}/substitution
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:3:13:substitution.Branding:Consider using 'JavaScript' instead of 'Javascript'
+
+$ cdf ${ROOTDIR}/spelling
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:1:1:spelling.MultiDic:'Nginx' is a typo!
+test.md:3:1:spelling.MultiDic:'HTTPie' is a typo!
+
+$ cdf ${ROOTDIR}/existence
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:1:3:existence.MultiScope:Don't say 'Test'
+test.md:1:3:existence.ReportingLimit:Don't use 'Test'.
+test.md:3:5:existence.FancyRegex:Don't say 'dialog '
+test.md:7:4:existence.MultiScope:Don't say 'Test'
+
+$ cdf ${ROOTDIR}/repetition
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:3:6:repetition.Words:'is' is repeated!
+
+$ cdf ${ROOTDIR}/consistency
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:5:19:consistency.Word:Inconsistent spelling of 'advisor'
+
+$ cdf ${ROOTDIR}/conditional
+$ vale --output=line --sort --normalize --relative --no-exit test.md
+test.md:9:5:conditional.MultiCapture:'NFL' has no definition

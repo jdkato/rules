@@ -1,0 +1,3 @@
+# Words
+
+This is is a sentence with a repeated word.

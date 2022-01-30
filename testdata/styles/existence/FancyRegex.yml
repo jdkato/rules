@@ -1,0 +1,9 @@
+---
+extends: existence
+message: "Don't say '%s'"
+level: error
+# You can now use positive lookahead ((?=re)), negative lookahead ((?!re)),
+# positive lookbehind ((?<=re)), and negative lookbehind ((?<!re)) constructs
+# in all extension points.
+tokens:
+  - "dialog (?!box)"

@@ -1,0 +1,10 @@
+---
+extends: existence
+message: "Don't use '%s'."
+level: error
+ignorecase: true
+# You can limit the number of times an rule will be displayed; a value of
+# `limit: 1` means that this rule will at most be reported once.
+limit: 1
+tokens:
+  - test
