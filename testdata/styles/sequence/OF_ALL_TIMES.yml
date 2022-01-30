@@ -1,3 +1,4 @@
+---
 extends: sequence
 message: "In this context, the idiom needs to be spelled 'of all time'."
 tokens:

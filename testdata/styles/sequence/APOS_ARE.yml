@@ -1,3 +1,4 @@
+---
 extends: sequence
 message: Did you mean "%[1]ss" instead of "%[1]s's"?
 tokens:
