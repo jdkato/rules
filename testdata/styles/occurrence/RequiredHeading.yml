@@ -1,0 +1,6 @@
+message: "Missing an 'Introduction' heading."
+extends: occurrence
+scope: heading
+level: error
+min: 1
+token: Introduction
