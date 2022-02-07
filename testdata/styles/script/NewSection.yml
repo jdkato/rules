@@ -1,6 +1,22 @@
 ---
 extends: script
 message: "Consider inserting a new section heading at this point."
+description: |
+  Suggest starting a new section after 3 paragraphs.
+
+  category: structure
+
+  example:
+
+  # A section
+
+  This is the first paragraph.
+
+  Here's the second.
+
+  An another.
+
+  One more.
 link: https://tengolang.com/
 # The unprocessed file contents.
 #

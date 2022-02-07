@@ -1,9 +1,17 @@
 ---
 extends: spelling
 message: "'%s' is a typo!"
+description: |
+  Spell check with multiple dictionaries.
+
+  category: spell check
+
+  example:
+
+  Abdominocentesis is a word in `en_medical`.
 # `dicpath` may be absolute or relative. Vale also
 # respects the `DICPATH` environment variable.
-dicpath: ../styles/dics
+dicpath: testdata/styles/dics
 dictionaries:
   - en_US
   - en_medical

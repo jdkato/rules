@@ -1,6 +1,18 @@
 ---
 message: "Missing an 'Introduction' heading."
 extends: occurrence
+description: |
+  An implementation of the Gunning-Fog index.
+
+  category: readability
+
+  example:
+
+  # First
+
+  ## Second
+
+  ### Third
 scope: heading
 level: error
 min: 1

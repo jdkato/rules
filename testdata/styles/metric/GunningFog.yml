@@ -2,7 +2,17 @@
 extends: metric
 message: "Try to keep the Gunning-Fog index (%s) below 10."
 link: https://en.wikipedia.org/wiki/Gunning_fog_index
+description: |
+  An implementation of the Gunning-Fog index.
 
+  category: readability
+
+  example:
+
+  The Gunning-Fog index is "is a weighted average of the number of words per
+  sentence, and the number of long words per word. An interpretation is that
+  the text can be understood by someone who left full-time education at a later
+  age than the index."
 formula: |
   0.4 * ((words / sentences) + 100 * (complex_words / words))
 condition: "> 10"

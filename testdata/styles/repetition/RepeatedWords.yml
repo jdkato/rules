@@ -1,0 +1,15 @@
+---
+extends: repetition
+message: "'%s' is repeated!"
+description: |
+  Catch instances of repeated words.
+
+  category: typos
+
+  example:
+
+  This is is a sentence with a repeated word.
+level: error
+alpha: true
+tokens:
+  - '[^\s]+'

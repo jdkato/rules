@@ -1,6 +1,16 @@
 ---
 extends: substitution
-message: Consider using '%s' instead of '%s'
+message: Use '%s' instead of '%s'
+description: |
+  Enforce the correct use of "JavaScript" (and other terms).
+
+  category: terminology & branding
+
+  example:
+
+  Do you know Javascript?
+
+  We used JavaScript for our app.
 level: warning
 ignorecase: true
 # swap maps tokens in form of bad: good

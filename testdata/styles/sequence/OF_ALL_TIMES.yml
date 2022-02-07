@@ -1,6 +1,14 @@
 ---
 extends: sequence
 message: "In this context, the idiom needs to be spelled 'of all time'."
+description: |
+  Find incorrect usage of 'of all times'.
+
+  category: grammar
+
+  example:
+
+  He is still the greatest basketball player of all times.
 tokens:
   - tag: JJS
     skip: 3

@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "*"
+pandas = "*"
+streamlit-ace = "*"
+"ruamel.yaml" = "*"
+pyyaml = "*"
+streamlit-aggrid = "*"
+
+[dev-packages]
+watchdog = "*"
+
+[requires]
+python_version = "3.9"

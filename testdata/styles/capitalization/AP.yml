@@ -1,6 +1,16 @@
 ---
 extends: capitalization
 message: "'%s' should be in title case"
+description: |
+  Enforces the AP heading capitalization style.
+
+  category: titlecase
+
+  example:
+
+  # follow step-by-step instructions
+
+  # Follow Step-by-Step Instructions
 level: warning
 scope: heading
 match: $title

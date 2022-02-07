@@ -1,7 +1,17 @@
 ---
 extends: existence
-message: "Don't say '%s'"
+message: "Try to avoid saying '%s' when not followed by 'box'."
 level: error
+description: |
+  An example of backtracking regex usage.
+
+  category: regex
+
+  example:
+
+  Click "OK" to close the dialog box.
+
+  Click "OK" to close the dialog window.
 # You can now use positive lookahead ((?=re)), negative lookahead ((?!re)),
 # positive lookbehind ((?<=re)), and negative lookbehind ((?<!re)) constructs
 # in all extension points.

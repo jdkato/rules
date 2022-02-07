@@ -1,0 +1,21 @@
+---
+extends: consistency
+message: "Inconsistent spelling of '%s'"
+description: |
+  Enforces consistent spellings.
+
+  category: word usage
+
+  example:
+
+  There is no difference in meaning between center and centre. Center is the
+  preferred spelling in American English, and centre is preferred in varieties
+  of English from outside the U.S.
+level: error
+scope: text
+ignorecase: true
+nonword: false
+# We only want one of these to appear.
+either:
+  advisor: adviser
+  centre: center

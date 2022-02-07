@@ -1,6 +1,14 @@
 ---
 extends: sequence
 message: Did you mean "%[1]ss" instead of "%[1]s's"?
+description: |
+  Detect extraneous apostrophes before 'are'.
+
+  category: punctuation
+
+  example:
+
+  The car's are cheap.
 tokens:
   - tag: NN
   - pattern: "'s"
