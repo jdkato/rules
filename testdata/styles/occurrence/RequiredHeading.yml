@@ -2,9 +2,9 @@
 message: "Missing an 'Introduction' heading."
 extends: occurrence
 description: |
-  An implementation of the Gunning-Fog index.
+  A min-based occurrence rule.
 
-  category: readability
+  category: structure
 
   example:
 
